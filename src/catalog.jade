@@ -1,0 +1,130 @@
+doctype html
+head
+	title Elwau.ru - игрушки для взрослых
+	meta(charset="utf-8")
+	link(rel="stylesheet", href="css/plugins/bootstrap.css")
+	link(rel="stylesheet", href="css/plugins/slick.css")
+	link(rel="stylesheet", href="css/elwau.css")
+body
+	.wrapper
+		include incl-header.jade
+		main
+			.col-md-4
+				include incl-left-column.jade
+			.col-md-8
+				.breadcrumbs 
+					a Главная 
+					span.str &rarr;
+					span Каталог
+				.cat-filtr
+					span показать: 
+					.list-of-buttons.js-cat-button
+						a(href="") автомодели
+						a(href="") самолеты
+						a(href="") вертолеты
+						a(href="") аккумуляторы кабели
+						a(href="") аппаратура
+						a(href="") инструмент, материалы
+						a(href="") винты, крепеж, клей
+				.cat-sorting
+					p сортировать по: 
+						ul.cat-sorting-list.js-cat-sorting
+							li.js-arrows дате добавления 
+								span.uarr
+							li.js-arrows стоимости 
+								span.uarr
+				.cat-info__item
+					.row.cat-info__item__row
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-1.jpg", alt="")
+							span.price 18 480 р.
+							a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-2.jpg", alt="")
+							span.price 5 712 р.
+							a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-3.jpg", alt="")
+							span.price 185 480 р.
+							a(href="") Электрический мини-вертолет HM 60#B
+					.row.cat-info__item__row
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-3.jpg", alt="")
+							span.price 18 480 р.
+							a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-1.jpg", alt="")
+							span.price 5 712 р.
+							a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-2.jpg", alt="")
+							span.price 185 480 р.
+							a(href="") Электрический мини-вертолет HM 60#B
+					.row.cat-info__item__row
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-2.jpg", alt="")
+							span.price 18 480 р.
+							a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-3.jpg", alt="")
+							span.price 5 712 р.
+							a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-1.jpg", alt="")
+							span.price 185 480 р.
+							a(href="") Электрический мини-вертолет HM 60#B
+					.row.cat-info__item__row
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-3.jpg", alt="")
+							span.price 18 480 р.
+							a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-1.jpg", alt="")
+							span.price 5 712 р.
+							a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
+						.col-md-4.cat-info__item__sm
+							a(href="")
+								img(src="img/cat-sm-2.jpg", alt="")
+							span.price 185 480 р.
+							a(href="") Электрический мини-вертолет HM 60#B
+				.pagination
+					.pages-l
+						.pages
+							p Страницы:
+							ul
+								li
+									a(href="") 1
+								li.active
+									a(href="") 2
+								li
+									a(href="") 3
+								li
+									a(href="") 4
+								li
+									a(href="") 10
+								li
+									a(href="", class="exeption") ..
+								li
+									a(href="") 45
+					.pages-r
+						span.page-prev 
+							a(href="") Предыдущая страница
+						span.page-next 
+							a(href="") Следущая страница
+				.about
+					h2 О компании
+					p История компании elwau.ru – один из примеров сочетания творческого подхода с чрезвычайной практичностью. Знаменитая идея братьев Венинг – оснастить различные виды транспорта мобильными холодильниками – в 70-х годах прошлого века перешагнула стандарты инженерного мышления.
+					p Что же до применения этой и множества других разработок – автохолодильники автокондиционеры, автопылесосы, автокофеварки elwau.ru – то здесь братья-изобретатели блестяще продемонстрировали свои организаторские таланты.  
+						a(href="") читать дальше 
+		include incl-footer.jade

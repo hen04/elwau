@@ -1,0 +1,534 @@
+/* ==========================================================================
+   0. TOTAL STYLES
+   ========================================================================== */
+body
+	border-color #f1f1f1
+p
+menu
+h2
+h3
+h4
+	margin 0
+	padding 0
+h3 
+	text-decoration underline
+	font-size 16px
+	color #000
+h4 
+	font-size 24px
+	line-height 1
+a 
+	color #e27d55
+	text-decoration underline
+	transition opacity .5s linear
+	&:hover 
+		color #e27d55
+		text-decoration none
+		opacity .8
+		transition opacity .5s linear
+
+.wrapper
+	max-width 960px
+	border 1px solid red
+	margin 0 auto
+
+.breadcrumbs
+	margin-bottom 15px
+	.str
+		padding 0 5px
+
+.pagination
+	overflow hidden
+	margin-bottom 60px
+	padding-top 5px
+	.pages-l
+		float left
+		padding-left 15px
+		font-size 13px
+		p
+			float left
+			margin-right 15px
+		ul
+			float left
+			margin 0
+			padding 0
+			line-height 1
+		li
+			list-style none
+			float left
+			padding 3px
+			margin 0 3px
+			a 
+				color #4f4f4f
+			.exeption
+				text-decoration none
+		.active
+			background-color #f37d43
+			border-radius 2px
+			border 1px solid #da896a
+			box-shadow 0 0 1px 1px #d8d8d8
+			margin-top -2px
+			a 
+				color #fff
+				text-decoration none
+
+	.pages-r
+		float right
+		span
+			margin 0 5px
+		a 
+			font-size 13px
+			color #4f4f4f
+		.page-prev
+			&:before
+				content '\2190'
+		.page-next
+			&:after
+				content '\2192'
+	
+sprite = url('../images/sprite.png') no-repeat
+
+.menu 
+	overflow hidden
+	height 48px
+	line-height 48px
+	li 
+		float left
+		margin-right 30px
+		list-style-type none
+		a 
+			text-decoration underline
+			transition opacity .5s linear
+			&:hover 
+				text-decoration none
+				opacity .8
+				transition opacity .5s linear
+
+h2 
+	color #4f4f4f
+	font-size 24px
+	font-weight 500
+
+
+/* ==========================================================================
+   1. MENU
+   ========================================================================== */
+.menu-search 
+	background-color #4f4f4f
+	overflow hidden
+	padding 0 15px
+
+		
+.top-menu
+	@extends .menu
+	li 
+		a 
+			color #e2e2e2
+			font-size 14px
+			
+
+
+/* ==========================================================================
+   2. TOP SEARCH
+   ========================================================================== */
+.top-search 
+	height 23px
+	background-color #fff
+	border-radius 2px
+	border-top 1px solid #b3b4b5
+	box-shadow 0 -2px 0 0 #3c3c3d
+	margin-top 12px
+	border 0
+	float left
+	padding-left 10px
+	color #c0c0c0
+	box-sizing border-box
+	width 200px
+	&:focus 
+		outline none
+
+.top-submit 
+	float left
+	margin 12px 0 0 -25px
+	height 23px
+	width 20px
+	border 0
+	background sprite 0 5px
+
+	
+/* ==========================================================================
+   3. LOGO
+   ========================================================================== */
+.logo-phones
+	overflow hidden
+	background-color #f8f8f8
+	margin-bottom 5px
+	padding 0 15px
+
+.logo 
+	margin 15px 0 30px
+
+.top-phones
+	margin 45px 0 5px
+	padding-left 20px
+	&:before 
+		content ''
+		position absolute
+		width 20px
+		height 25px
+		left 15px
+		background sprite 0 -14px
+	span 
+		font-size 20px
+		color #da501a
+	.code 
+		color #4f4f4f
+	
+.top-letter 
+	a 
+		background sprite 0 -37px
+		text-decoration underline
+		color #4f4f4f
+		font-size 13px
+		padding-left 25px
+
+.icq 
+	background sprite 0 -57px
+	margin-left 30px
+	padding 4px 0 3px 25px
+		
+		
+.cart-info 
+	margin-top 50px
+	span
+		background sprite 0 -78px
+		display block
+		padding-left 25px
+		font-size 13px
+		color #727272
+		margin-bottom 10px
+	a 
+		font-size 13px
+		color #da501a
+		text-decoration underline
+		padding-left 25px
+		background sprite 0 -100px
+
+
+/* ==========================================================================
+   4. MAIN
+   ========================================================================== */
+main 
+	background-color #f8f8f8
+	overflow hidden
+	padding 15px
+	box-sizing border-box
+	margin-bottom 5px
+
+.left-menu
+	margin-bottom 80px 
+	li
+		background-color #f3f2f0
+		margin-bottom 2px
+		list-style none
+		a 
+			color #4f4f4f
+			padding 5px 20px
+			display block
+			text-decoration underline
+		a.active
+			background-color #ed6d3b
+			color #fff
+	&__sub 
+		font-size 13px
+		background-color #f8f8f8
+		li
+			background-color #f8f8f8
+		a 
+			color #8c8c8c
+			&:before 
+				content '— '
+				
+				
+.news-info
+	margin-bottom 30px
+	&__item
+		margin-bottom 20px
+		.date 
+			font-size 12px
+			color #898989
+			display block
+		a 
+			color #4f4f4f
+			font-size 14px
+			text-decoration underline
+		p 
+			color #7d7d7d
+			font-size 13px
+		
+.white-us
+	margin-bottom 30px
+	button 
+		background-color #ed6d3b
+		color #fff
+		font-size 20px
+		display block
+		border 0
+		margin 0 auto
+		border-radius 2px
+		padding 5px 35px 5px 15px
+		&:after 
+			content ''
+			position absolute
+			width 20px
+			height 25px
+			margin-left 5px
+			background sprite 0 -133px
+		&:focus
+			outline none
+
+.banners
+	img 
+		margin-bottom 30px
+
+.main-slider 
+	margin-bottom 50px
+.slider-info
+	margin 0 35px
+	overflow hidden
+	&__txt
+		float left
+		width 53%
+		margin-right 2%
+	&__img 
+		float right
+		width 45%
+		img 
+			max-width 100%
+	&__detail
+		margin 15px 0
+		padding 15px 10px
+		border-top 1px solid #000
+		border-bottom 1px solid #000
+		font-size 13px
+		color #4f4f4f
+		tr
+			&:nth-child(odd)
+				background-color #f3f2f0
+		td 
+			padding 2px 5px
+			vertical-align top
+
+.slider-price
+	padding-left 35px
+	p 
+		color #717171
+		font-size 18px
+		display inline-block
+		vertical-align middle
+		margin-right 20px
+		.num
+			color #010101
+			font-size 22px
+			display inline-block
+			vertical-align middle
+			margin-right 5px
+		.rub
+			color #717171
+			font-size 14px
+			
+	.add-to-cart
+		background-color #4f4f4f
+		color #fff
+		text-transform uppercase
+		font-size 13px
+		border-radius 2px
+		padding 10px 25px 10px 15px
+		text-decoration none
+		&:after 
+			content ''
+			background sprite 0 -119px
+			position absolute
+			width 10px
+			height 15px
+			margin 6px 0 0 5px
+		
+.slick-active 
+		outline none
+	&:focus
+	&:active
+	&:hover
+		outline none
+	
+.slick-arrow
+	width 25px
+	height 48px
+	text-indent -99999px
+	position absolute
+	top 70px
+	border 0
+	background transparent url(../images/arrows.png) no-repeat
+	z-index 1
+	&:focus
+		outline none
+.slick-next
+	right 0
+	background-position -25px 0
+	&:hover
+		background-position -25px -52px
+.slick-prev
+	&:hover
+		background-position 0 -52px
+
+.cat-info
+	&__item
+		background-color #fff
+		padding 10px
+		box-sizing border-box
+		margin-bottom 15px
+		overflow hidden
+		&__row 
+			margin-bottom 30px
+		&__sm
+			position relative
+			text-align center
+			img 
+				margin-bottom 30px
+				max-width 100%
+			.price 
+				position absolute
+				background-color #4f4f4f
+				color #f3f2f0
+				font-size 24px
+				border-radius 2px
+				border 1px solid #fff
+				right 15px
+				top 100px
+				padding 0 10px
+			a 
+				font-size 14px
+
+.review
+	margin-bottom 30px
+	&__item 
+		overflow hidden
+		padding-bottom 10px
+		padding-top 15px
+		&:nth-child(even)
+			border-bottom 1px solid #efefef
+		&:nth-child(odd)
+			border-top 1px solid #fff
+		img 
+			border 1px solid #999
+			float left
+			margin-right 20px
+		p 
+			font-size 13px
+			
+
+.about 
+	margin-bottom 30px
+	p 
+		font-size 13px
+
+/* ==========================================================================
+   5. FOOTER MENU
+   ========================================================================== */
+footer 
+	padding-bottom 15px
+.footer-menu
+	background-color #f8f8f8
+	padding 0 30px
+	margin-bottom 15px
+	@extends .menu
+	li
+		a 
+			color #747474
+			font-size 13px
+
+
+/* ==========================================================================
+   6. COPYRIGHT INFO
+   ========================================================================== */
+.copyright 
+	padding 0 15px
+	overflow hidden
+	font-size 13px
+	span 
+		display block
+		color #747474
+		a 
+			color #747474
+			text-decoration none
+.item-1
+	color #5e5e5e
+	a 
+		color #5e5e5e
+		text-decoration underline
+
+.with-love
+	p
+		text-align right
+		color #747474
+		a 
+			color #747474
+			text-decoration underline
+
+
+
+/* ==========================================================================
+   7. CATALOG
+   ========================================================================== */
+.cat-filtr 
+	background-color #4f4f4f
+	padding 7px 15px 4px
+	margin-bottom 15px
+	span
+		float left
+		color #f3f2f0
+		font-size 14px
+	.list-of-buttons
+		margin-left 80px
+		a
+			border 0
+			background-color #dfdfdf
+			display inline-block
+			text-decoration none
+			color #000
+			margin 0 5px 5px 0
+			font-size 13px
+			line-height 1
+			padding 2px 4px 4px 4px
+			&:focus
+			&:active 
+				outline none 
+		.active 
+			background-color darken(#dfdfdf, 20%)
+.cat-sorting
+	margin-bottom 15px
+	p
+		font-size 13px
+		color #8c8c8c
+		display inline-block
+	.cat-sorting-list 
+		display inline-block
+		padding 0
+		margin 0
+		li 
+			padding 5px
+			display inline-block
+			list-style none
+			font-size 13px
+			color #8c8c8c
+			cursor pointer
+		.active
+			background-color #eee
+			
+		.uarr
+			&:after 
+				content '\2191'
+		.darr
+			&:after 
+				content '\2193'
+				
+			
