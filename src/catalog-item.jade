@@ -1,0 +1,74 @@
+doctype html
+head
+  title Elwau.ru - игрушки для взрослых
+  meta(charset="utf-8")
+  link(rel="stylesheet", href="css/plugins/bootstrap.css")
+  link(rel="stylesheet", href="css/plugins/slick.css")
+  link(rel="stylesheet", href="css/elwau.css")
+body
+  .wrapper
+    include incl-header.jade
+    main
+      .col-md-4
+        include incl-left-column.jade
+      .col-md-8
+        .breadcrumbs 
+          a(href="index.html") Главная 
+          span.str &rarr;
+          a(href="catalog.html") Каталог
+          span.str &rarr;
+          span Kyosho Lazer ZX-5 (синий)
+        .row.catalog-item
+          .col-md-7
+            p Слайдер
+          .col-md-5
+            h1 Kyosho Lazer ZX-5 (синий)
+            .cat-item-info
+              span Производитель: Kyosho 
+              span Модель: 30861T4B
+              span Наличие: 
+                strong В наличии
+            .price-buy
+              .price-buy__price
+                | 8,490 р.
+              .price-buy__buy
+                a купить
+            .share
+              span.share__txt Поделиться с друзьями
+              script(src="//yastatic.net/share/share.js", charset="utf-8")
+              .yashare-auto-init(data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir")
+            .cat-item-lnk
+              span — 
+                a(href="") Задать вопрос по товару
+              span — 
+                a(href="") Доставка и гарантия
+        .catalog-item-info.js-tab-grp
+          menu.tab-menu.js-tab-menu
+            li.js-tab-menu-btn(data-tab-btn="1") Описание
+            li.js-tab-menu-btn(data-tab-btn="2") Отзывы
+          .js-tab-content
+            .js-tab-item(data-tab-item="1")
+              p Полностью собранное шасси, установленный двигатель Kyosho G20 Stock, электронный регулятор скорости PERFEX KA-15, микроприёмник PERFEX KR-6, сервомашинку PERFEX KS-101BK, покрашенный корпус с наклейками, двухканальный передатчик Perfex/Futaba KT-6, инструкцию, трубочку для антенны приёмника, крестовой/колёсный ключ.
+            .js-tab-item(data-tab-item="2")
+              p Восемь батареек или аккумуляторов типа АА для передатчика
+                | Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
+                | Зарядное устройство для силового аккумулятора
+                | Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
+        .catalog-dop-item
+          .row.cat-info__item__row
+            .col-md-4.cat-info__item__sm
+              a(href="")
+                img(src="img/cat-sm-1.jpg", alt="")
+              span.price 18 480 р.
+              a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
+            .col-md-4.cat-info__item__sm
+              a(href="")
+                img(src="img/cat-sm-2.jpg", alt="")
+              span.price 5 712 р.
+              a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
+            .col-md-4.cat-info__item__sm
+              a(href="")
+                img(src="img/cat-sm-3.jpg", alt="")
+              span.price 185 480 р.
+              a(href="") Электрический мини-вертолет HM 60#B
+    include incl-footer.jade
