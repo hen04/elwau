@@ -11,6 +11,7 @@ h1
 h2
 h3
 h4
+h5
 	margin 0
 	padding 0
 h1 
@@ -29,6 +30,9 @@ h3
 h4 
 	font-size 24px
 	line-height 1
+h5
+	font-size 16px
+	margin-bottom 10px
 a 
 	color #da501a
 	text-decoration underline
@@ -115,6 +119,14 @@ sprite = url('../images/sprite.png') no-repeat
 				text-decoration none
 				opacity .8
 				transition opacity .5s linear
+
+.white-bg
+	background-color #fff
+	border 1px solid #e7e7e7
+	border-radius 5px
+	padding 10px 15px
+	box-shadow 0 2px 2px 0 #c1c1c1
+	margin-bottom 30px
 
 
 /* ==========================================================================
@@ -632,15 +644,47 @@ footer
 	span 
 		display block
 
+
 .catalog-item-info 
-	background-color #fff
-	border 1px solid #e7e7e7
-	border-radius 5px
-	padding 5px 15px
-	box-shadow 0 2px 2px 0 #c1c1c1
-	margin-bottom 30px
+	@extends .white-bg
+	
 .tab-menu
 	overflow hidden
+	margin-bottom 15px
 	li
 		float left
 		list-style none
+		cursor pointer
+		padding 5px 0 0 0
+		line-height 1
+		color #da501a
+		margin-right 15px
+		border-bottom 1px dashed #da501a
+	.active
+		background-color #f3f2f0
+		border-radius 5px
+		padding 5px 10px
+		cursor default
+		color #4f4f4f
+		border-bottom 0
+			
+.tab-content
+	&__item
+		margin-bottom 15px
+		span
+			display block
+
+.catalog-dop-item 
+	@extends .white-bg
+	h4 
+		font-size 18px
+		font-style italic
+		font-weight 500
+		margin-bottom 15px
+
+/* ==========================================================================
+   9. ABOUT
+   ========================================================================== */
+.about-info
+	p 
+		margin-bottom 15px
