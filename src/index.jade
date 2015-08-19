@@ -1,11 +1,9 @@
-doctype html
-head
+extends template.jade
+
+block title
 	title Elwau.ru - игрушки для взрослых
-	meta(charset="utf-8")
-	link(rel="stylesheet", href="css/plugins/bootstrap.css")
-	link(rel="stylesheet", href="css/plugins/slick.css")
-	link(rel="stylesheet", href="css/elwau.css")
-body
+
+block content
 	.wrapper
 		include incl-header.jade
 		main
@@ -92,55 +90,19 @@ body
 					.cat-info__item
 						h3 Распродажа
 						.row.cat-info__item__row
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-1.jpg", alt="")
-								span.price 18 480 р.
-								a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-2.jpg", alt="")
-								span.price 5 712 р.
-								a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-3.jpg", alt="")
-								span.price 185 480 р.
-								a(href="") Электрический мини-вертолет HM 60#B
+							+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
+							+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+							+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
 					.cat-info__item
 						h3 Хиты продаж
 						.row.cat-info__item__row
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-1.jpg", alt="")
-								span.price 18 480 р.
-								a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-2.jpg", alt="")
-								span.price 5 712 р.
-								a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-3.jpg", alt="")
-								span.price 185 480 р.
-								a(href="") Электрический мини-вертолет HM 60#B
+							+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+							+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
+							+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
 						.row.cat-info__item__row
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-2.jpg", alt="")
-								span.price 18 480 р.
-								a(href="") CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-3.jpg", alt="")
-								span.price 5 712 р.
-								a(href="") Кордовая модель-копия PT-19 Profile Control Line 36 ARF
-							.col-md-4.cat-info__item__sm
-								a(href="")
-									img(src="img/cat-sm-1.jpg", alt="")
-								span.price 185 480 р.
-								a(href="") Электрический мини-вертолет HM 60#B
+							+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
+							+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+							+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
 				.review
 					h2 Последние обзоры
 					.review__item

@@ -1,0 +1,7 @@
+mixin CatRow(lnk, img, price, lnk, txt)
+
+  .col-md-4.cat-info__item__sm
+    a(href=lnk)
+      img(src=img, alt="")
+    span.price=price
+    a(href=lnk)=txt
