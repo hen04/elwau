@@ -2,84 +2,81 @@ extends template.jade
 block title
   title Elwau.ru - игрушки для взрослых - Kyosho Lazer ZX-5 (синий)
 block content
-  .wrapper
-    include incl-header.jade
-    main
-      .col-md-4
-        include incl-left-column.jade
-      .col-md-8
-        .breadcrumbs 
-          a(href="index.html") Главная 
-          span.str &rarr;
-          a(href="catalog.html") Каталог
-          span.str &rarr;
-          span Kyosho Lazer ZX-5 (синий)
-        .row.catalog-item
-          .col-md-7
-            p Слайдер
-          .col-md-5
-            h1 Kyosho Lazer ZX-5 (синий)
-            .cat-item-info
-              span Производитель: Kyosho 
-              span Модель: 30861T4B
-              span Наличие: 
-                strong В наличии
-            .price-buy
-              .price-buy__price
-                | 8,490 р.
-              .price-buy__buy
-                a купить
-            .share
-              span.share__txt Поделиться с друзьями
-              script(src="//yastatic.net/share/share.js", charset="utf-8")
-              .yashare-auto-init(data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir")
-            .cat-item-lnk
-              span — 
-                a(href="") Задать вопрос по товару
-              span — 
-                a(href="") Доставка и гарантия
-        .catalog-item-info.js-tab-grp
-          menu.tab-menu.js-tab-menu
-            li.js-tab-menu-btn(data-tab-btn="1") Описание
-            li.js-tab-menu-btn(data-tab-btn="2") Отзывы
-          .tab-content.js-tab-content
-            .js-tab-item(data-tab-item="1")
-              .tab-content__item
-                p Полностью собранное шасси, установленный двигатель Kyosho G20 Stock, электронный регулятор скорости PERFEX KA-15, микроприёмник PERFEX KR-6, сервомашинку PERFEX KS-101BK, покрашенный корпус с наклейками, двухканальный передатчик Perfex/Futaba KT-6, инструкцию, трубочку для антенны приёмника, крестовой/колёсный ключ.
-              h5 Спецификации:
-              .tab-content__item
-                span Длина: 380 мм.
-                span Ширина: 248 мм.
-                span Высота: 145 мм.
-                span Клиренс: 24 мм.
-                span Длина колесной базы: 270 мм.
-                span Колея (передняя/задняя): 176/176 мм.
-                span Ширина колёс (перед/зад): 34/42мм.
-                span Передаточное число: 8.125:1.
-                span Вес (приблизительно): 1650 г.
-              h5 Комплект требует:
-              .tab-content__item
-                span Восемь батареек или аккумуляторов типа АА для передатчика
-                span Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
-                span Зарядное устройство для силового аккумулятора
-                span Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
-            .js-tab-item(data-tab-item="2")
-              .tab-content__item
-                h5 Отзыв 1
-                span Восемь батареек или аккумуляторов типа АА для передатчика
-                span Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
-                span Зарядное устройство для силового аккумулятора
-                span Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
-              .tab-content__item
-                h5 Отзыв 2
-                span Восемь батареек или аккумуляторов типа АА для передатчика
-                span Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
-                span Зарядное устройство для силового аккумулятора
-                span Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
-        .catalog-dop-item
-          h4 Подобные товары
-          .row.cat-info__item__row
-            +CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
-            +CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
-            +CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
-    include incl-footer.jade
+  main
+    .col-md-4
+      include incl-left-column.jade
+    .col-md-8
+      .breadcrumbs 
+        a(href="index.html") Главная 
+        span.str &rarr;
+        a(href="catalog.html") Каталог
+        span.str &rarr;
+        span Kyosho Lazer ZX-5 (синий)
+      .row.catalog-item
+        .col-md-7
+          p Слайдер
+        .col-md-5
+          h1 Kyosho Lazer ZX-5 (синий)
+          .cat-item-info
+            span Производитель: Kyosho 
+            span Модель: 30861T4B
+            span Наличие: 
+              strong В наличии
+          .price-buy
+            .price-buy__price
+              | 8,490 р.
+            .price-buy__buy
+              a купить
+          .share
+            span.share__txt Поделиться с друзьями
+            script(src="//yastatic.net/share/share.js", charset="utf-8")
+            .yashare-auto-init(data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir")
+          .cat-item-lnk
+            span — 
+              a(href="") Задать вопрос по товару
+            span — 
+              a(href="") Доставка и гарантия
+      .catalog-item-info.js-tab-grp
+        menu.tab-menu.js-tab-menu
+          li.js-tab-menu-btn(data-tab-btn="1") Описание
+          li.js-tab-menu-btn(data-tab-btn="2") Отзывы
+        .tab-content.js-tab-content
+          .js-tab-item(data-tab-item="1")
+            .tab-content__item
+              p Полностью собранное шасси, установленный двигатель Kyosho G20 Stock, электронный регулятор скорости PERFEX KA-15, микроприёмник PERFEX KR-6, сервомашинку PERFEX KS-101BK, покрашенный корпус с наклейками, двухканальный передатчик Perfex/Futaba KT-6, инструкцию, трубочку для антенны приёмника, крестовой/колёсный ключ.
+            h5 Спецификации:
+            .tab-content__item
+              span Длина: 380 мм.
+              span Ширина: 248 мм.
+              span Высота: 145 мм.
+              span Клиренс: 24 мм.
+              span Длина колесной базы: 270 мм.
+              span Колея (передняя/задняя): 176/176 мм.
+              span Ширина колёс (перед/зад): 34/42мм.
+              span Передаточное число: 8.125:1.
+              span Вес (приблизительно): 1650 г.
+            h5 Комплект требует:
+            .tab-content__item
+              span Восемь батареек или аккумуляторов типа АА для передатчика
+              span Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
+              span Зарядное устройство для силового аккумулятора
+              span Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
+          .js-tab-item(data-tab-item="2")
+            .tab-content__item
+              h5 Отзыв 1
+              span Восемь батареек или аккумуляторов типа АА для передатчика
+              span Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
+              span Зарядное устройство для силового аккумулятора
+              span Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
+            .tab-content__item
+              h5 Отзыв 2
+              span Восемь батареек или аккумуляторов типа АА для передатчика
+              span Силовой аккумулятор с разъемом Tamiya на 7.2V NI-MH (не менее 1200mAh)
+              span Зарядное устройство для силового аккумулятора
+              span Важно: некоторые универсальные зарядные устройства "питаются" от 11-18V поэтому для работы от сети (220V) потребуется соответствующий адаптер.
+      .catalog-dop-item
+        h4 Подобные товары
+        .row.cat-info__item__row
+          +CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+          +CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
+          +CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")  

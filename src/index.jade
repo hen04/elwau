@@ -3,121 +3,118 @@ extends template.jade
 block title
 	title Elwau.ru - игрушки для взрослых
 
-block content
-	.wrapper
-		include incl-header.jade
-		main
-			.col-md-4
-				include incl-left-column.jade
-			.col-md-8
-				.main-slider
-					.main-slider__item
-						.slider-info
-							.slider-info__txt
-								h4 Электрический мини-вертолет Beacon
-								.slider-info__detail
-									table
-										tr
-											td Тип: 
-											td мини вертолет 
-										tr
-											td Шасси: 
-											td пластик 
-										tr
-											td Электродвигатели: 
-											td 180 размера (2 шт.) 
-										tr
-											td Время полета: 
-											td 10 - 12 минут 
-							.slider-info__img
-								img(src="img/slider-1.png", alt="")
-						.slider-price
-							p Цена: 
-								span.num 6 960 
-								span.rub рублей
-							a(href="", class="add-to-cart") В корзину
-					.main-slider__item
-						.slider-info
-							.slider-info__txt
-								h4 Электрический мини-вертолет HM 60#B
-								.slider-info__detail
-									table
-										tr
-											td Тип: 
-											td мини вертолет 
-										tr
-											td Шасси: 
-											td пластик 
-										tr
-											td Электродвигатели: 
-											td 180 размера (2 шт.) 
-										tr
-											td Время полета: 
-											td 10 - 12 минут 
-							.slider-info__img
-								img(src="img/slider-2.png", alt="")
-						.slider-price
-							p Цена: 
-								span.num 16 960 
-								span.rub рублей
-							a(href="", class="add-to-cart") В корзину
-					.main-slider__item
-						.slider-info
-							.slider-info__txt
-								h4 Кордовая модель-копия PT-19 Profile Control Line 36 ARF
-								.slider-info__detail
-									table
-										tr
-											td Тип: 
-											td мини вертолет 
-										tr
-											td Шасси: 
-											td пластик 
-										tr
-											td Электродвигатели: 
-											td 180 размера (2 шт.) 
-										tr
-											td Время полета: 
-											td 10 - 12 минут 
-							.slider-info__img
-								img(src="img/slider-3.png", alt="")
-						.slider-price
-							p Цена: 
-								span.num 116 960 
-								span.rub рублей
-							a(href="", class="add-to-cart") В корзину
-				.cat-info
-					.cat-info__item
-						h3 Распродажа
-						.row.cat-info__item__row
-							+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
-							+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
-							+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
-					.cat-info__item
-						h3 Хиты продаж
-						.row.cat-info__item__row
-							+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
-							+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
-							+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
-						.row.cat-info__item__row
-							+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
-							+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
-							+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
-				.review
-					h2 Последние обзоры
-					+LastReview("img/review-1.jpg", "text.html", "Наша компания организовала тест на прочность и выносливость эктрическому мини-вертолету HM60#B", "Было приглашено около 30 человек, но зрителей собралось в разы больше. Место проведения теста - площадь. Зрители смотрели как на шоу, маневры и падения вертолета сопровождались возгласами, вот вот и ходила бы волна по зрителям.")
-					+LastReview("img/review-1.jpg", "text.html", "Kyosho Lazer ZX-5 (синий)", "Полностью собранное шасси, установленный двигатель Kyosho G20 Stock, электронный регулятор скорости PERFEX KA-15, микроприёмник PERFEX KR-6, сервомашинку PERFEX KS-101BK, покрашенный корпус с наклейками, двухканальный передатчик Perfex/Futaba KT-6, инструкцию, трубочку для антенны приёмника, крестовой/колёсный ключ.")
+		block content
+			main
+				.col-md-4
+					include incl-left-column.jade
+				.col-md-8
+					.main-slider
+						.main-slider__item
+							.slider-info
+								.slider-info__txt
+									h4 Электрический мини-вертолет Beacon
+									.slider-info__detail
+										table
+											tr
+												td Тип: 
+												td мини вертолет 
+											tr
+												td Шасси: 
+												td пластик 
+											tr
+												td Электродвигатели: 
+												td 180 размера (2 шт.) 
+											tr
+												td Время полета: 
+												td 10 - 12 минут 
+								.slider-info__img
+									img(src="img/slider-1.png", alt="")
+							.slider-price
+								p Цена: 
+									span.num 6 960 
+									span.rub рублей
+								a(href="", class="add-to-cart") В корзину
+						.main-slider__item
+							.slider-info
+								.slider-info__txt
+									h4 Электрический мини-вертолет HM 60#B
+									.slider-info__detail
+										table
+											tr
+												td Тип: 
+												td мини вертолет 
+											tr
+												td Шасси: 
+												td пластик 
+											tr
+												td Электродвигатели: 
+												td 180 размера (2 шт.) 
+											tr
+												td Время полета: 
+												td 10 - 12 минут 
+								.slider-info__img
+									img(src="img/slider-2.png", alt="")
+							.slider-price
+								p Цена: 
+									span.num 16 960 
+									span.rub рублей
+								a(href="", class="add-to-cart") В корзину
+						.main-slider__item
+							.slider-info
+								.slider-info__txt
+									h4 Кордовая модель-копия PT-19 Profile Control Line 36 ARF
+									.slider-info__detail
+										table
+											tr
+												td Тип: 
+												td мини вертолет 
+											tr
+												td Шасси: 
+												td пластик 
+											tr
+												td Электродвигатели: 
+												td 180 размера (2 шт.) 
+											tr
+												td Время полета: 
+												td 10 - 12 минут 
+								.slider-info__img
+									img(src="img/slider-3.png", alt="")
+							.slider-price
+								p Цена: 
+									span.num 116 960 
+									span.rub рублей
+								a(href="", class="add-to-cart") В корзину
+					.cat-info
+						.cat-info__item
+							h3 Распродажа
+							.row.cat-info__item__row
+								+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
+								+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+								+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
+						.cat-info__item
+							h3 Хиты продаж
+							.row.cat-info__item__row
+								+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+								+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
+								+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
+							.row.cat-info__item__row
+								+CatRow("catalog.html", "img/cat-sm-3.jpg", "181 400 р", "catalog.html", "Электрический мини-вертолет HM 60#B")
+								+CatRow("catalog-item.html", "img/cat-sm-2.jpg", "8 500 р", "catalog-item.html", "Кордовая модель-копия PT-19 Profile Control Line 36 ARF")
+								+CatRow("catalog.html", "img/cat-sm-1.jpg", "18 250 р", "catalog.html", "CYCLONE D4 WORLD CHAMPIONSHIP EDITION KIT")
+					.review
+						h2 Последние обзоры
+						+LastReview("img/review-1.jpg", "text.html", "Наша компания организовала тест на прочность и выносливость эктрическому мини-вертолету HM60#B", "Было приглашено около 30 человек, но зрителей собралось в разы больше. Место проведения теста - площадь. Зрители смотрели как на шоу, маневры и падения вертолета сопровождались возгласами, вот вот и ходила бы волна по зрителям.")
+						+LastReview("img/review-1.jpg", "text.html", "Kyosho Lazer ZX-5 (синий)", "Полностью собранное шасси, установленный двигатель Kyosho G20 Stock, электронный регулятор скорости PERFEX KA-15, микроприёмник PERFEX KR-6, сервомашинку PERFEX KS-101BK, покрашенный корпус с наклейками, двухканальный передатчик Perfex/Futaba KT-6, инструкцию, трубочку для антенны приёмника, крестовой/колёсный ключ.")
 
-				mixin list(id, ...items)
-					ul(id=id)
-						-each item in items
-							li= item
+					mixin list(id, ...items)
+						ul(id=id)
+							-each item in items
+								li= item
 
-				+list('my-list', 'img/review-1.jpg', 22, 24543, 54544)
+					+list('my-list', 'img/review-1.jpg', 22, 24543, 54544)
 
-				.about
-					h2 О компании
-					p История компании elwau.ru – один из примеров сочетания творческого подхода с чрезвычайной практичностью. Знаменитая идея братьев Венинг – оснастить различные виды транспорта мобильными холодильниками – в 70-х годах прошлого века перешагнула стандарты инженерного мышления.
-					p Что же до применения этой и множества других разработок – автохолодильники автокондиционеры, автопылесосы, автокофеварки elwau.ru – то здесь братья-изобретатели блестяще продемонстрировали свои организаторские таланты.  
-						a(href="") читать дальше 
-		include incl-footer.jade
+					.about
+						h2 О компании
+						p История компании elwau.ru – один из примеров сочетания творческого подхода с чрезвычайной практичностью. Знаменитая идея братьев Венинг – оснастить различные виды транспорта мобильными холодильниками – в 70-х годах прошлого века перешагнула стандарты инженерного мышления.
+						p Что же до применения этой и множества других разработок – автохолодильники автокондиционеры, автопылесосы, автокофеварки elwau.ru – то здесь братья-изобретатели блестяще продемонстрировали свои организаторские таланты.  
+							a(href="") читать дальше 
