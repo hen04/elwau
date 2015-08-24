@@ -253,12 +253,19 @@ a:hover {
   color: #727272;
   margin-bottom: 10px;
 }
-.cart-info a {
+.authorised,
+.enter {
   font-size: 13px;
-  color: #da501a;
   text-decoration: underline;
-  padding-left: 25px;
+  padding: 1px 0 0 25px;
+}
+.authorised {
+  color: #da501a;
   background: url("../images/sprite.png") no-repeat 0 -100px;
+}
+.enter {
+  color: #4f4f4f;
+  background: url("../images/sprite.png") no-repeat 5px -165px;
 }
 /* ==========================================================================
    4. MAIN

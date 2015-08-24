@@ -1,7 +1,12 @@
+//- объект для меню, в key передается адрес страницы, в value - название страницы
+- var menu = {"about.html" : "О компании", "catalog.html" : "Каталог", "delivery.html" : "Доставка", "shops.html" : "Наши магазины", "wholesalers.html" : "Оптовикам", "contacts.html" : "Контакты"}
+
 .menu-search
 	.col-md-9
 		menu.top-menu
-			include incl-menu.jade
+			- each value, key in menu
+				li
+					a(href="#{key}") #{value}
 	.col-md-3
 		form
 			input(type="text", placeholder="Поиск по каталогу", class="top-search")
@@ -22,5 +27,9 @@
 	.col-md-3
 		.cart-info
 			span В вашей корзине пусто
-			a(href="") Личный кабинет
+			- var cabinet = 1
+			- if (cabinet > 2)
+				a(href="", class="authorised") Личный кабинет
+			- else 
+				a(href="", class="enter") Вход в личный кабинет
 block content
