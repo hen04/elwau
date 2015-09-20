@@ -3,7 +3,10 @@
   $(function(){
 
     // slick slider
-    $('.main-slider').slick();
+    $('.main-slider').slick({
+      prevArrow : '<button type="button" class="slick-prev"><span></span></button>',
+      nextArrow : '<button type="button" class="slick-next"><span></span></button>'  
+    });
 
     // сортировать + показать 
     $('.js-cat-button a').on('click', function(event){
@@ -96,6 +99,24 @@
     $('.catalog-item-info').tabsPower();
 
 
+
+    (function(){
+      $.fn.imgSlider = function(){
+        var $this = $(this), 
+            $dataImg = $this.data('img');
+        $('.img-big img').attr('src', 'img/' + $dataImg);
+      }
+
+      $('.img-slider').on('click', '.img-small img', function(){
+        var $this = $(this);
+        $this.imgSlider();
+      });
+    })();
+
+
+    $('.write-us').on('click', '.js-modal', function(){
+      $('#exampleModal').arcticmodal();
+    })
 
 
   });

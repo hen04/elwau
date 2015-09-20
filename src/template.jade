@@ -5,9 +5,14 @@ doctype html
 head
   meta(charset="utf-8")
   block title
-  link(rel="stylesheet", href="css/plugins/bootstrap.css")
-  link(rel="stylesheet", href="css/plugins/slick.css")
-  link(rel="stylesheet", href="css/elwau.css")
+
+  //- с помощью миксина и цикла задаем вывод стилей ниже
+  mixin styles(...styles)
+    -each style in styles
+      link(rel="stylesheet", href=style)
+
+  +styles('css/plugins/bootstrap.css', 'css/plugins/slick.css', 'css/plugins/jquery.arcticmodal.css', 'css/elwau.css')
+
 body
   .wrapper
     //- объект для меню, в key передается адрес страницы, в value - название страницы
@@ -15,7 +20,7 @@ body
     .menu-search
       .col-md-9
         menu.top-menu
-          - each value, key in menu
+          -each value, key in menu
             li
               a(href="#{key}") #{value}
       .col-md-3
@@ -25,7 +30,8 @@ body
     .logo-phones
       .col-md-4
         .logo
-        img(src="images/logo.png", alt="elwau.ru")
+          a(href="index.html")
+            img(src="images/logo.png", alt="elwau.ru")
       .col-md-5
         .top-phones 
           span.code (495) 
@@ -48,7 +54,7 @@ body
 
     footer
       menu.footer-menu
-        - each value, key in menu
+        -each value, key in menu
           li
             a(href="#{key}") #{value}
       .copyright
@@ -63,6 +69,11 @@ body
         .col-md-4.pull-right.with-love
           p Дизайн сайта - 
             a(href="") Плюснин Никита
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-    script(src="js/plugins/slick.min.js")
-    script(src="js/elwau.js")
+
+    //- с помощью миксина и цикла задаем возможность вывода скриптов
+    mixin scripts(...scripts)
+      -each script in scripts
+        script(src=script)
+
+    +scripts('//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', 'js/plugins/slick.min.js', 'js/plugins/jquery.arcticmodal.js', 'js/elwau.js')
+

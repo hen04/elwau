@@ -1,10 +1,15 @@
 extends template.jade
+
 block title
   title Elwau.ru - игрушки для взрослых - Kyosho Lazer ZX-5 (синий)
+
 block content
   main
     .col-md-4
       include incl-left-column.jade
+      .banners
+        a(href="")
+          img(src="http://placehold.it/280x250", alt="")
     .col-md-8
       .breadcrumbs 
         a(href="index.html") Главная 
@@ -13,8 +18,13 @@ block content
         span.str &rarr;
         span Kyosho Lazer ZX-5 (синий)
       .row.catalog-item
-        .col-md-7
-          p Слайдер
+        .col-md-7.img-slider
+          .img-big
+            img(src="img/cat-1.jpg")
+          .img-small
+            img(src="img/cat-1.jpg", data-img="cat-1.jpg")
+            img(src="img/cat-2.jpg", data-img="cat-2.jpg")
+            img(src="img/cat-3.jpg", data-img="cat-3.jpg")
         .col-md-5
           h1 Kyosho Lazer ZX-5 (синий)
           .cat-item-info

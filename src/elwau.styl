@@ -3,6 +3,9 @@
 /* ==========================================================================
    0. TOTAL STYLES
    ========================================================================== */
+c_gray = #f3f2f0
+c_orange = #ed6d3b
+
 body
 	border-color #f1f1f1
 p
@@ -34,11 +37,11 @@ h5
 	font-size 16px
 	margin-bottom 10px
 a 
-	color #da501a
+	color c_orange
 	text-decoration underline
 	transition opacity .5s linear
 	&:hover 
-		color #da501a
+		color c_orange
 		text-decoration none
 		opacity .8
 		transition opacity .5s linear
@@ -199,7 +202,7 @@ sprite = url('../images/sprite.png') no-repeat
 		background sprite 0 -14px
 	span 
 		font-size 20px
-		color #da501a
+		color c_orange
 	.code 
 		color #4f4f4f
 	
@@ -232,7 +235,7 @@ sprite = url('../images/sprite.png') no-repeat
 	text-decoration underline
 	padding 1px 0 0 25px
 .authorised
-	color #da501a
+	color c_orange
 	background sprite 0 -100px
 .enter 
 	color #4f4f4f
@@ -251,7 +254,7 @@ main
 .left-menu
 	margin-bottom 80px 
 	li
-		background-color #f3f2f0
+		background-color c_gray
 		margin-bottom 2px
 		list-style none
 		a 
@@ -260,7 +263,7 @@ main
 			display block
 			text-decoration underline
 		a.active
-			background-color #ed6d3b
+			background-color c_orange
 			color #fff
 	&__sub 
 		font-size 13px
@@ -291,10 +294,10 @@ main
 			color #7d7d7d
 			font-size 13px
 		
-.white-us
+.write-us
 	margin-bottom 30px
 	button 
-		background-color #ed6d3b
+		background-color c_orange
 		color #fff
 		font-size 20px
 		display block
@@ -339,7 +342,7 @@ main
 		color #4f4f4f
 		tr
 			&:nth-child(odd)
-				background-color #f3f2f0
+				background-color c_gray
 		td 
 			padding 2px 5px
 			vertical-align top
@@ -386,24 +389,30 @@ main
 		outline none
 	
 .slick-arrow
-	width 25px
-	height 48px
-	text-indent -99999px
+	width 35px
+	height 253px
 	position absolute
-	top 70px
+	top 0
 	border 0
-	background transparent url(../images/arrows.png) no-repeat
+	background-color #f8f8f8 
 	z-index 1
+	span 
+		display block
+		width 25px
+		height 48px
+		background url(../images/arrows.png) no-repeat
 	&:focus
 		outline none
 .slick-next
 	right 0
-	background-position -25px 0
-	&:hover
-		background-position -25px -52px
+	span
+		background-position -25px 0
+		&:hover
+			background-position -25px -52px
 .slick-prev
-	&:hover
-		background-position 0 -52px
+	span
+		&:hover
+			background-position 0 -52px
 
 .cat-info
 	&__item
@@ -423,7 +432,7 @@ main
 			.price 
 				position absolute
 				background-color #4f4f4f
-				color #f3f2f0
+				color c_gray
 				font-size 24px
 				border-radius 2px
 				border 1px solid #fff
@@ -510,7 +519,7 @@ footer
 	margin-bottom 15px
 	span
 		float left
-		color #f3f2f0
+		color c_gray
 		font-size 14px
 	.list-of-buttons
 		margin-left 80px
@@ -563,9 +572,23 @@ footer
 .catalog-item
 	margin-bottom 30px
 	overflow hidden
+	.img-big
+		margin-bottom 5px
+		img
+			border 10px solid c_gray
+			max-width 100%
+	.img-small
+		margin-left -6px
+		img 
+			width 106px
+			vertical-align top
+			border 1px solid #ececec
+			padding 3px
+			margin-left 6px
+			cursor pointer
 .cat-item-info 
-	border-top 1px solid #f3f2f0
-	border-bottom 1px solid #f3f2f0
+	border-top 1px solid c_gray
+	border-bottom 1px solid c_gray
 	padding 10px 0 8px
 	margin-bottom 15px
 	position relative
@@ -598,10 +621,11 @@ footer
 	border-top 0
 	font-size 0
 	text-align center 
-	padding 5px 15px 15px
+	padding 5px 10px 0
 	margin-bottom 30px
 	box-shadow 0 0 5px 0 #f1d7bc
 	position relative
+	overflow hidden
 	&:before
 		content ''
 		position absolute
@@ -609,7 +633,7 @@ footer
 		bottom -14px
 		width 100%
 		height 1px
-		background-color #f3f2f0
+		background-color c_gray
 	&:after
 		content ''
 		position absolute
@@ -620,13 +644,17 @@ footer
 		background-color #fff
 	&__price
 		color #fff
-		font-size 30px
+		font-size 25px
 		font-weight 700
 		margin-bottom 5px
+		float left
+		line-height 1.5
 	&__buy
+		float right
+		margin-top 4px
 		a 
 			background-color #dadada
-			font-size 24px
+			font-size 20px
 			color #4f4f4f
 			text-decoration none
 			padding 3px 10px 5px
@@ -661,11 +689,11 @@ footer
 		cursor pointer
 		padding 5px 0 0 0
 		line-height 1
-		color #da501a
+		color c_orange
 		margin-right 15px
-		border-bottom 1px dashed #da501a
+		border-bottom 1px dashed c_orange
 	.active
-		background-color #f3f2f0
+		background-color c_gray
 		border-radius 5px
 		padding 5px 10px
 		cursor default
@@ -692,3 +720,53 @@ footer
 .about-info
 	p 
 		margin-bottom 15px
+		
+
+/* ==========================================================================
+   10. DELIVERY
+   ========================================================================== */
+.delivery-info 
+	h2 
+		font-size 20px
+	p 
+		margin-bottom 15px
+
+
+
+/* ==========================================================================
+   11. CONTACTS
+   ========================================================================== */
+.contacts-info
+	&__txt 
+		&__item 
+			margin-bottom 25px
+	&__form
+		background-color #f3f2f0
+		overflow hidden
+		padding 15px
+.inp-txt, 
+.ta-form
+	display block
+	border 1px solid #D7D7D7
+	border-radius 5px
+	padding 5px
+	width 100%
+	box-sizing border-box
+	margin-bottom 5px
+.inp-txt
+	height 36px
+.ta-form
+	height 80px
+	resize none
+.inp-subm
+	background-color c_orange
+	color #fff
+	padding 5px 15px
+	border 0
+	border-radius 5px
+	display block
+	margin 0 auto
+	transition opacity .5s linear
+	&:hover 
+		opacity .8
+		transition opacity .5s linear

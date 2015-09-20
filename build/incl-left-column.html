@@ -29,7 +29,21 @@
     <p>Скоро ноябрь, а это значит, что скоро вас ждет большое количество скидок в связи с нашим юбелеем.					</p>
   </div>
 </div>
-<div class="white-us">
-  <button>Написать нам</button>
+<div class="write-us">
+  <button class="js-modal">Написать нам</button>
 </div>
-<div class="banners"><a href=""><img src="http://placehold.it/280x250" alt=""/></a><a href=""><img src="http://placehold.it/280x250" alt=""/></a></div>
+<div style="display: none" class="arcticmodal">
+  <div id="exampleModal" class="box-modal">
+    <div class="modal-form">
+      <form>
+        <label for="name">ФИО</label>
+        <input type="text" id="name" class="inp-txt"/>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" class="inp-txt"/>
+        <label for="message">Сообщение</label>
+        <textarea name="" id="message" class="ta-form"></textarea>
+        <input type="submit" class="inp-subm"/>
+      </form>
+    </div>
+  </div>
+</div>

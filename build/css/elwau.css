@@ -38,12 +38,12 @@ h5 {
   margin-bottom: 10px;
 }
 a {
-  color: #da501a;
+  color: #ed6d3b;
   text-decoration: underline;
   transition: opacity 0.5s linear;
 }
 a:hover {
-  color: #da501a;
+  color: #ed6d3b;
   text-decoration: none;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -225,7 +225,7 @@ a:hover {
 }
 .top-phones span {
   font-size: 20px;
-  color: #da501a;
+  color: #ed6d3b;
 }
 .top-phones .code {
   color: #4f4f4f;
@@ -260,7 +260,7 @@ a:hover {
   padding: 1px 0 0 25px;
 }
 .authorised {
-  color: #da501a;
+  color: #ed6d3b;
   background: url("../images/sprite.png") no-repeat 0 -100px;
 }
 .enter {
@@ -329,10 +329,10 @@ main {
   color: #7d7d7d;
   font-size: 13px;
 }
-.white-us {
+.write-us {
   margin-bottom: 30px;
 }
-.white-us button {
+.write-us button {
   background-color: #ed6d3b;
   color: #fff;
   font-size: 20px;
@@ -342,7 +342,7 @@ main {
   border-radius: 2px;
   padding: 5px 35px 5px 15px;
 }
-.white-us button:after {
+.write-us button:after {
   content: '';
   position: absolute;
   width: 20px;
@@ -350,7 +350,7 @@ main {
   margin-left: 5px;
   background: url("../images/sprite.png") no-repeat 0 -133px;
 }
-.white-us button:focus {
+.write-us button:focus {
   outline: none;
 }
 .banners img {
@@ -436,26 +436,33 @@ main {
   outline: none;
 }
 .slick-arrow {
+  width: 35px;
+  height: 253px;
+  position: absolute;
+  top: 0;
+  border: 0;
+  background-color: #f8f8f8;
+  z-index: 1;
+}
+.slick-arrow span {
+  display: block;
   width: 25px;
   height: 48px;
-  text-indent: -99999px;
-  position: absolute;
-  top: 70px;
-  border: 0;
-  background: transparent url("../images/arrows.png") no-repeat;
-  z-index: 1;
+  background: url("../images/arrows.png") no-repeat;
 }
 .slick-arrow:focus {
   outline: none;
 }
 .slick-next {
   right: 0;
+}
+.slick-next span {
   background-position: -25px 0;
 }
-.slick-next:hover {
+.slick-next span:hover {
   background-position: -25px -52px;
 }
-.slick-prev:hover {
+.slick-prev span:hover {
   background-position: 0 -52px;
 }
 .cat-info__item {
@@ -635,6 +642,24 @@ footer {
   margin-bottom: 30px;
   overflow: hidden;
 }
+.catalog-item .img-big {
+  margin-bottom: 5px;
+}
+.catalog-item .img-big img {
+  border: 10px solid #f3f2f0;
+  max-width: 100%;
+}
+.catalog-item .img-small {
+  margin-left: -6px;
+}
+.catalog-item .img-small img {
+  width: 106px;
+  vertical-align: top;
+  border: 1px solid #ececec;
+  padding: 3px;
+  margin-left: 6px;
+  cursor: pointer;
+}
 .cat-item-info {
   border-top: 1px solid #f3f2f0;
   border-bottom: 1px solid #f3f2f0;
@@ -673,10 +698,11 @@ footer {
   border-top: 0;
   font-size: 0;
   text-align: center;
-  padding: 5px 15px 15px;
+  padding: 5px 10px 0;
   margin-bottom: 30px;
   box-shadow: 0 0 5px 0 #f1d7bc;
   position: relative;
+  overflow: hidden;
 }
 .price-buy:before {
   content: '';
@@ -698,13 +724,19 @@ footer {
 }
 .price-buy__price {
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 5px;
+  float: left;
+  line-height: 1.5;
+}
+.price-buy__buy {
+  float: right;
+  margin-top: 4px;
 }
 .price-buy__buy a {
   background-color: #dadada;
-  font-size: 24px;
+  font-size: 20px;
   color: #4f4f4f;
   text-decoration: none;
   padding: 3px 10px 5px;
@@ -736,9 +768,9 @@ footer {
   cursor: pointer;
   padding: 5px 0 0 0;
   line-height: 1;
-  color: #da501a;
+  color: #ed6d3b;
   margin-right: 15px;
-  border-bottom: 1px dashed #da501a;
+  border-bottom: 1px dashed #ed6d3b;
 }
 .tab-menu .active {
   background-color: #f3f2f0;
@@ -765,4 +797,57 @@ footer {
    ========================================================================== */
 .about-info p {
   margin-bottom: 15px;
+}
+/* ==========================================================================
+   10. DELIVERY
+   ========================================================================== */
+.delivery-info h2 {
+  font-size: 20px;
+}
+.delivery-info p {
+  margin-bottom: 15px;
+}
+/* ==========================================================================
+   11. CONTACTS
+   ========================================================================== */
+.contacts-info__txt__item {
+  margin-bottom: 25px;
+}
+.contacts-info__form {
+  background-color: #f3f2f0;
+  overflow: hidden;
+  padding: 15px;
+}
+.inp-txt,
+.ta-form {
+  display: block;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+.inp-txt {
+  height: 36px;
+}
+.ta-form {
+  height: 80px;
+  resize: none;
+}
+.inp-subm {
+  background-color: #ed6d3b;
+  color: #fff;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.5s linear;
+}
+.inp-subm:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  transition: opacity 0.5s linear;
 }

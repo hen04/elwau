@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <title>Elwau.ru - игрушки для взрослых - Kyosho Lazer ZX-5 (синий)</title>
-  <link rel="stylesheet" href="css/plugins/bootstrap.css">
-  <link rel="stylesheet" href="css/plugins/slick.css">
-  <link rel="stylesheet" href="css/elwau.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins/slick.css">
+    <link rel="stylesheet" href="css/plugins/jquery.arcticmodal.css">
+    <link rel="stylesheet" href="css/elwau.css">
 </head>
 <body>
   <div class="wrapper">
@@ -28,7 +29,7 @@
     </div>
     <div class="logo-phones">
       <div class="col-md-4">
-        <div class="logo"></div><img src="images/logo.png" alt="elwau.ru">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="elwau.ru"></a></div>
       </div>
       <div class="col-md-5">
         <div class="top-phones"> <span class="code">(495) </span><span>234-22-33, </span><span class="code">(495) </span><span>232-22-35</span></div>
@@ -71,16 +72,32 @@
             <p>Скоро ноябрь, а это значит, что скоро вас ждет большое количество скидок в связи с нашим юбелеем.					</p>
           </div>
         </div>
-        <div class="white-us">
-          <button>Написать нам</button>
+        <div class="write-us">
+          <button class="js-modal">Написать нам</button>
         </div>
-        <div class="banners"><a href=""><img src="http://placehold.it/280x250" alt=""></a><a href=""><img src="http://placehold.it/280x250" alt=""></a></div>
+        <div style="display: none" class="arcticmodal">
+          <div id="exampleModal" class="box-modal">
+            <div class="modal-form">
+              <form>
+                <label for="name">ФИО</label>
+                <input type="text" id="name" class="inp-txt">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" class="inp-txt">
+                <label for="message">Сообщение</label>
+                <textarea name="" id="message" class="ta-form"></textarea>
+                <input type="submit" class="inp-subm">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="banners"><a href=""><img src="http://placehold.it/280x250" alt=""></a></div>
       </div>
       <div class="col-md-8">
         <div class="breadcrumbs"> <a href="index.html">Главная </a><span class="str">&rarr;</span><a href="catalog.html">Каталог</a><span class="str">&rarr;</span><span>Kyosho Lazer ZX-5 (синий)</span></div>
         <div class="row catalog-item">
-          <div class="col-md-7">
-            <p>Слайдер</p>
+          <div class="col-md-7 img-slider">
+            <div class="img-big"><img src="img/cat-1.jpg"></div>
+            <div class="img-small"><img src="img/cat-1.jpg" data-img="cat-1.jpg"><img src="img/cat-2.jpg" data-img="cat-2.jpg"><img src="img/cat-3.jpg" data-img="cat-3.jpg"></div>
           </div>
           <div class="col-md-5">
             <h1>Kyosho Lazer ZX-5 (синий)</h1>
@@ -149,8 +166,9 @@
         </div>
       </div>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/plugins/slick.min.js"></script>
-    <script src="js/elwau.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/plugins/slick.min.js"></script>
+        <script src="js/plugins/jquery.arcticmodal.js"></script>
+        <script src="js/elwau.js"></script>
   </div>
 </body>
